@@ -43,11 +43,16 @@
     </header>
     <main>
     <!-- Doorstep -->
-    <section class="max-w-screen-2xl mt-20">
+    <section class="max-w-screen-2xl mt-20 m-auto ">
         <div>
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="/images/banner1.png" class="w-full" />
+                  <div class="absolute text-center text-white space-y-4  ">
+                    <h1 class="text-7xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p>We supply highly quality organic products</p>
+                    <button class="btn btn-primary">Shop Now</button>
+                  </div>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
@@ -76,7 +81,104 @@
                 </div>
               </div>
         </div>
-        <div></div>
+        <div>Bonus</div>
+     </section>
+     <!-- Deal -->
+     <section class="max-w-screen-2xl mt-20 m-auto space-y-5">
+      <div class="flex">
+        <div class="flex-1 space-y-4">
+          <h2 class="text-4xl font-extrabold">Deal of the day</h2>
+          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max fiex-1">
+          <div class="flex flex-col">
+            <span class="countdown font-lato font-extrabold text-5xl">
+              <span style="--value:29;"></span>
+            </span>
+            days
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-lato font-extrabold text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            hours
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-lato font-extrabold text-5xl">
+              <span style="--value:25;"></span>
+            </span>
+            min
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-lato font-extrabold text-5xl">
+              <span style="--value:08;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="flex gap-6 ">
+
+        <div class="card  shadow-xl">
+          <figure><img src="/images/fruit6.png" alt="Shoes" /></figure>
+          <div class="card-body space-y-4">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-center">Apples</p>
+            <div class="rating rating-md rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            </div>
+            <div class="card-actions justify-center">
+              <!-- Open the modal using ID.showModal() method -->
+             <button class="btn bg-white border-0 text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+             <dialog id="my_modal_1" class="modal">
+             <form method="dialog" class="modal-box">
+              <img class="justify-center m-auto mb-6" src="./images/fruit6.png" alt="">
+            <h3 class="font-bold text-lg text-center">Apples</h3>
+           <p class="py-4 text-center">Professional employees are there for you to pick the most <br>amazing and fresh fruits.</p>
+           <div class="m-auto ">
+           <div class="rating rating-md rating-half">
+            <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          </div>
+        </div>
+         <div class="modal-action">
+
+      <!-- if there is a button in form, it will close the modal -->
+           <div class="justify-center m-auto space-x-8">
+            <button class="btn bg-white border-[#F85559] text-[#F85559]">Close</button>
+            <button class="btn bg-[#F85559] text-white">Bye Now</button>
+           </div>
+    </div>
+  </form>
+</dialog>
+            </div>
+          </div>
+        </div>
+
+
+        
+          </div>
      </section>
     </main>
 </body>
