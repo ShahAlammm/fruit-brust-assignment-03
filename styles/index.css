@@ -8,13 +8,15 @@
 
 
 /* Nav Responsive */
-@media  screen and (min-width:300px) and (max-width:425px){
+@media  screen and (min-width:1px) and (max-width:769px){
     #nav-1{
+        position: absolute;
         display: none;
+        margin: 0%;
+        padding: 0%;
     }
-    .hero {
-        height: 600px;
-    }
+    
+    
     
     .carousel-item{
         justify-items: center;
