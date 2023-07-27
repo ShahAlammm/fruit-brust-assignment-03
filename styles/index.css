@@ -12,7 +12,14 @@
     #nav-1{
         display: none;
     }
+    .hero {
+        height: 600px;
+    }
     
+    .carousel-item{
+        justify-items: center;
+        padding: 10px;
 
+    }
     
 }
