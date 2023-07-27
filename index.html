@@ -16,10 +16,12 @@
     }
   </style>
 </head>
-<body class="font-lato">
-    <header>
+<body class="font-lato ">
+    <header >
+      <!-- Nav for lg -->
+      <nav class="  mt-10">
         <div  class="lg:max-w-screen-2xl m-auto mt-10">
-        <div class="navbar lg:bg-[#F85559] rounded-full px-4  ">
+        <div class="navbar lg:bg-[#F85559] lg:rounded-full lg:px-4 ">
             <div class="navbar-start">
               <div>
                 <ul  class="flex gap-x-7 ml-10 text-white">
@@ -30,16 +32,43 @@
                 </ul>
               </div>
             </div>
-            <div class=" lg:navbar-center lg:px-4  mr-30">
-                <img src="images/logo.png" alt="">
-              <a class="btn btn-ghost normal-case text-3xl font-bold lg:text-white">Fruit Burst</a>
+            <div class="navbar-center px-4  mr-30 ">
+                <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-3xl font-bold lg:text-white ">Fruit Burst</a>
             </div>
             <div class="navbar-end">
                 <input type="text" placeholder="Search here" class="input input-bordered w-27 mr-4 h-10 rounded-full" />
-                <img class="absolute mr-8 h-4 w-4" src="images/Frame.png" alt="">
+                <img class="absolute mr-8 h-4 w-4" src="./images/Frame.png" alt="">
             </div>
           </div>
         </div>
+      </nav>
+      
+<!-- Nav for md -->
+      <nav class=" lg:hidden mt-10">
+        <div class="navbar bg-base-100">
+          <div class="flex-none">
+           
+          </div>
+          <div class="flex-1">
+            <img src="./images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-3xl font-bold lg:text-white">Fruit Burst</a>
+          </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+                <li><a><input type="text" placeholder="Search here" class="input input-bordered w-20  h-5 " /></a></li>  
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     </header>
     <main>
     <!-- Doorstep -->
@@ -47,7 +76,7 @@
         <div>
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="/images/banner1.png" class="w-full opacity-60" />
+                  <img src="./images/banner1.png" class="w-full opacity-60" />
                   <div class="absolute text-center text-white space-y-4  ">
                     <h1 class="text-7xl font-bold">Exotic tastes at your <br> doorstep</h1>
                     <p>We supply highly quality organic products</p>
@@ -59,21 +88,21 @@
                   </div>
                 </div> 
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img src="/images/banner2.png" class="w-full opacity-60" />
+                  <img src="./images/banner2.png" class="w-full opacity-60" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
                     <a href="#slide3" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
                 <div id="slide3" class="carousel-item relative w-full">
-                  <img src="/images/banner3.png" class="w-full opacity-60" />
+                  <img src="./images/banner3.png" class="w-full opacity-60" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
                     <a href="#slide4" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
                 <div id="slide4" class="carousel-item relative w-full">
-                  <img src="/images/banner4.png" class="w-full opacity-60" />
+                  <img src="./images/banner4.png" class="w-full opacity-60" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" class="btn btn-circle">❮</a> 
                     <a href="#slide1" class="btn btn-circle">❯</a>
@@ -121,7 +150,7 @@
       <div class="space-y-4 lg:flex lg:flex-row-4 lg:justify-around md:flex-col-1 m-auto">
 
         <div class="card border-gray-300 border-2 w-80 pt-6">
-          <figure><img src="/images/fruit6.png" alt="Shoes" /></figure>
+          <figure><img src="./images/fruit6.png" alt="" /></figure>
           <div class="card-body space-y-4 items-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
             <hr class="text-[#d1d5db] w-48">
@@ -177,11 +206,11 @@
         </div>
 
         <div class="card  border-gray-300 border-2 w-80 pt-6">
-          <figure><img src="/images/fruit7.png" alt="Shoes" /></figure>
+          <figure><img src="./images/fruit7.png" alt="" /></figure>
           <div class="card-body space-y-4 items-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
             <hr class=" text-[#d1d5db] w-48 ">
-            <p class="text-center">Apples</p>
+            <p class="text-center">Orange</p>
             <div class="rating rating-md rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
@@ -197,11 +226,11 @@
             </div>
             <div class="card-actions justify-center m-auto">
               <!-- Open the modal using ID.showModal() method -->
-             <button class="btn bg-white border-0 text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+             <button class="btn bg-white border-0 text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
              <dialog id="my_modal_2" class="modal">
              <form method="dialog" class="modal-box">
-              <img class="justify-center m-auto mb-6" src="./images/fruit6.png" alt="">
-            <h3 class="font-bold text-lg text-center">Apples</h3>
+              <img class="justify-center m-auto mb-6" src="./images/fruit7.png" alt="">
+            <h3 class="font-bold text-lg text-center">Orange</h3>
            <p class="py-4 text-center">Professional employees are there for you to pick the most <br>amazing and fresh fruits.</p>
            <div class="relative ml-40">
           <div class="rating rating-md rating-half ">
@@ -233,11 +262,11 @@
         </div>
 
         <div class="card  border-gray-300 border-2 w-80 pt-6">
-          <figure><img src="/images/fruit8.png" alt="Shoes" /></figure>
+          <figure><img src="./images/fruit8.png" alt="" /></figure>
           <div class="card-body space-y-4 items-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
             <hr class="text-[#d1d5db] w-48">
-            <p class="text-center">Apples</p>
+            <p class="text-center">Red Dragon</p>
             <div class="rating rating-md rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
@@ -253,11 +282,11 @@
             </div>
             <div class="card-actions justify-center m-auto">
               <!-- Open the modal using ID.showModal() method -->
-             <button class="btn bg-white border-0 text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+             <button class="btn bg-white border-0 text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
              <dialog id="my_modal_3" class="modal">
              <form method="dialog" class="modal-box">
-              <img class="justify-center m-auto mb-6" src="./images/fruit6.png" alt="">
-            <h3 class="font-bold text-lg text-center">Apples</h3>
+              <img class="justify-center m-auto mb-6" src="./images/fruit8.png" alt="">
+            <h3 class="font-bold text-lg text-center">Red Dragon</h3>
            <p class="py-4 text-center">Professional employees are there for you to pick the most <br>amazing and fresh fruits.</p>
            <div class="relative ml-40">
           <div class="rating rating-md rating-half ">
@@ -289,11 +318,11 @@
         </div>
 
         <div class="card  border-gray-300 border-2 w-80 pt-6">
-          <figure><img src="/images/fruit9.png" alt="Shoes" /></figure>
+          <figure><img src="./images/fruit9.png" alt="" /></figure>
           <div class="card-body space-y-4 items-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
             <hr class="text-[#d1d5db] w-48">
-            <p class="text-center">Apples</p>
+            <p class="text-center">Banana</p>
             <div class="rating rating-md rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
@@ -309,11 +338,11 @@
             </div>
             <div class="card-actions justify-center m-auto">
               <!-- Open the modal using ID.showModal() method -->
-             <button class="btn bg-white border-0 text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+             <button class="btn bg-white border-0 text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
              <dialog id="my_modal_4" class="modal">
              <form method="dialog" class="modal-box">
-              <img class="justify-center m-auto mb-6" src="./images/fruit6.png" alt="">
-            <h3 class="font-bold text-lg text-center">Apples</h3>
+              <img class="justify-center m-auto mb-6" src="./images/fruit9.png" alt="">
+            <h3 class="font-bold text-lg text-center">Banana</h3>
            <p class="py-4 text-center">Professional employees are there for you to pick the most <br>amazing and fresh fruits.</p>
            <div class="relative ml-40">
           <div class="rating rating-md rating-half ">
@@ -349,7 +378,7 @@
     </div>
      </section>
      <!-- Team section -->
-     <section class="lg:max-w-screen-2xl mt-32  m-auto">
+     <section class="lg:max-w-screen-2xl mt-32   m-auto">
       <div class="hero max-h-screen rounded-xl" style="background-image: url(./images/team.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
@@ -357,12 +386,12 @@
             <h1 class="mb-3 text-5xl font-bold pt-24">Meet the team section</h1>
             <p class="mb-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           
-            <div class="flex mt-5 gap-40 justify-center">
+            <div class="flex mt-5 gap-40 justify-center sm:flex-col-1 lg:flex-row-4">
                          <!-- Avatar -->
             <div>            
             <div class="avatar">
               <div class="w-24 rounded-full  bg-white ">
-                <img src="/images/member1.png" />  
+                <img src="./images/member1.png" />  
               </div>
             </div>
             <h3>Awlad Hossain</h3>
@@ -378,7 +407,7 @@
              <div class="">              
             <div class="avatar">
               <div class="w-24 rounded-full  ">
-                <img src="/images/member2.png" />
+                <img src="./images/member2.png" />
               </div>  
             </div>
             <h3>Safia Chowdhury</h3>
@@ -393,7 +422,7 @@
             <div>
             <div class="avatar">
               <div class="w-24 rounded-full  ">
-                <img src="/images/member3.png" />
+                <img src="./images/member3.png" />
               </div>  
             </div>
             <h3>Rokib Hossain</h3>
@@ -408,7 +437,7 @@
              <div>                
             <div class="avatar">
               <div class="w-24 rounded-full  ">
-                <img src="/images/member4.png" />
+                <img src="./images/member4.png" />
               </div>  
             </div>
             <h3>Chaity</h3>
@@ -433,21 +462,21 @@
 
     <div class="flex flex-col text-left m-auto space-y-4">
       <div class="card card-side ">
-        <figure><img src="/images/group 1.jpg" alt="Movie"/></figure>
+        <figure><img src="./images/group 1.jpg" alt="Movie"/></figure>
         <div class="card-body">
           <h2 class="card-title text-3xl font-extrabold">Dedicated Team</h2><hr>
           <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
         </div>
       </div>
       <div class="card card-side ">
-        <figure><img src="/images/love 1.jpg" alt="Movie"/></figure>
+        <figure><img src="./images/love 1.jpg" alt="Movie"/></figure>
         <div class="card-body">
           <h2 class="card-title text-3xl font-extrabold">Fresh is Best</h2><hr>
           <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
         </div>
       </div>
       <div class="card card-side ">
-        <figure><img src="/images/gift-box 1.jpg" alt="Movie"/></figure>
+        <figure><img src="./images/gift-box 1.jpg" alt="Movie"/></figure>
         <div class="card-body">
           <h2 class="card-title text-3xl font-extrabold">Gift Certificates</h2><hr>
           <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
@@ -468,7 +497,7 @@
           <h2 class=" text-3xl font-extrabold">Integrated Supplier</h2><hr>
           <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
         </div>
-        <figure><img src="/images/fruit 1.jpg" alt="Movie"/></figure>
+        <figure><img src="./images/fruit 1.jpg" alt="Movie"/></figure>
       </div>
 
       <div class="card card-side ">
@@ -476,7 +505,7 @@
           <h2 class=" text-3xl font-extrabold">Sustainable Practice</h2><hr>
           <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
         </div>
-        <figure><img src="/images/ice-cream 1.jpg" alt="Movie"/></figure>
+        <figure><img src="./images/ice-cream 1.jpg" alt="Movie"/></figure>
       </div>
 
       <div class="card card-side ">
@@ -484,7 +513,7 @@
           <h2 class="text-3xl font-extrabold">The Benefits Only</h2><hr>
           <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
         </div>
-        <figure><img src="/images/like 1.jpg" alt="Movie"/></figure>
+        <figure><img src="./images/like 1.jpg" alt="Movie"/></figure>
       </div>
      
     </div>
@@ -494,10 +523,10 @@
 
     </main>
     <!-- Footer -->
-    <footer class="footer footer-center mt-40 p-10 bg-[#121212] text-base-content rounded">
+    <footer class="footer footer-center mt-40 p-10 bg-[#121212]  rounded">
 
       <div class=" lg:navbar-center lg:px-4 lg:flex mt-10 mr-30">
-        <img src="images/logo.png" alt="">
+        <img src="./images/logo.png" alt="">
       <a class="btn btn-ghost normal-case text-3xl font-bold lg:text-white">Fruit Burst</a>
     </div>
 
